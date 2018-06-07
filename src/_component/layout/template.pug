@@ -1,0 +1,13 @@
+doctype html
+html
+  block cool-config
+  head
+    title=myTitle
+    meta(name="Garden Design", content=myDescription)
+    link(rel="stylesheet", href="/style.css")
+  body
+    include ../header/header
+    article
+      block primary-content
+    include ../nav/nav
+    include ../footer/footer

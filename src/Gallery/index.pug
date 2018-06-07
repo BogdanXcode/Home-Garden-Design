@@ -1,0 +1,20 @@
+extends ../_component/layout/template
+
+block cool-config
+  -
+    var myTitle ='Garden Design Photo Gallery';
+    var myDescription ='Browse hundreds of inspiring gardens. Check back often, we add new photos on a regular basis!';
+    var landingPage = 'Gallery';
+    var activeLink = '';
+
+block primary-content
+  h1=myTitle
+  p=myDescription
+  h6 POPULAR GALLERIES
+  p Browse our collection of garden pictures. #[a(href="/POPULAR GALLERIES") Check it out!]
+  h6 GREAT GARDENS
+  p Immerse yourself in photos of gardens previously featured on the pages of the magazine. #[a(href="/GREAT GARDENS") Read more great garden articles!]
+  h6 READER GARDENS
+  p Get a behind-the-scenes look at gardens created and tended by our readers. #[a(href="/READER GARDENS") Read more articles about our readers' gardens!]
+  h6 EDIBLE GARDENS
+  p Browse our library of vegetable and fruit pictures. #[a(href="/EDIBLE GARDENS") View all edible garden photos!]

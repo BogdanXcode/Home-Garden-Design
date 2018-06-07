@@ -1,0 +1,21 @@
+-
+  var topNavigationList = [
+    {label: 'Home',link: '/'},
+    {label: 'Landscape Design',link: '/Landscape Design'},
+    {label: 'Gallery',link: '/Gallery'},
+    {label: 'About us',link: '/About us'},
+  ]
+
+header
+  each navigation in topNavigationList
+    //- check if navigation label is the same as landingPage
+    if navigation.label == landigPage
+      a.current(href=navigation.link)=navigation.label
+    else
+      a(href=navigation.link)=navigation.label
+  //-a(href="/") Home
+  //-a(href="/Landscape Design") Landscape Design
+  //-a(href="/Gallery") Gallery
+  //-a(href="/About us") About us
+
+
