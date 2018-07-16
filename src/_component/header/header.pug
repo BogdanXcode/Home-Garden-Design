@@ -9,7 +9,7 @@
 header
   each navigation in topNavigationList
     //- check if navigation label is the same as landingPage
-    if navigation.label == landigPage
+    if navigation.label == landingPage
       a.current(href=navigation.link)=navigation.label
     else
       a(href=navigation.link)=navigation.label
@@ -17,5 +17,3 @@ header
   //-a(href="/Landscape Design") Landscape Design
   //-a(href="/Gallery") Gallery
   //-a(href="/About us") About us
-
-

@@ -1,5 +1,42 @@
+-
+  var sideNavigationList = {
+    'Home': {
+      title: 'Garden Designs',
+      linkList: [
+        {label: 'Garden Inspiration', link: '/garden/inspiration'},
+        {label: 'Popular Now', link: '/popular/now'},
+        {label: 'Upcoming Events', link: '/upcoming/events'},
+      ]
+    },
+    'Landscape Design': {
+      title: 'Landscaping',
+      linkList: [
+        {label: 'Small Yards', link: '/small/yards'},
+        {label: 'Landscape Design Principles', link: '/landscape/design/principles'},
+        {label: 'Garden Styles', link: '/garden/styles'},
+      ]
+    },
+    'Gallery': {
+      title: 'Photo Gallery',
+      linkList: [
+        {label: 'Popular Galleries', link: '/popular/galleries'},
+        {label: 'Great Gardens', link: '/great/gardens'},
+        {label: 'Container Gardens', link: '/container/gardens'},
+      ]
+    },
+    'About us': {
+      title: 'Who we are',
+      linkList: [
+        {label: 'Customer Testimonials', link: '/customer/testimonials'},
+        {label: 'Company Profile', link: '/company/profile'},
+        {label: 'Privacy Policy', link: '/privacy/policy'},
+      ]
+    },
+  };
 nav
-  h3 Garden Design's
-  a(href="/Projects") Projects
-  a(href="/Flowers") Flowers
-  a(href="/Shade Gardens") Shade Gardens
+  h3=sideNavigationList[landingPage].title
+  each navigation in sideNavigationList[landingPage].linkList
+    a(href=navigation.link)=navigation.label
+  //-  a(href="/Projects") Projects
+  //-  a(href="/Flowers") Flowers
+  //-  a(href="/Shade Gardens") Shade Gardens

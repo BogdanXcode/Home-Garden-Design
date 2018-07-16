@@ -1,0 +1,16 @@
+extends ../../_component/layout/template
+
+block cool-config
+  -
+    var myTitle ='Welcome to our page';
+    var myDescription ='This is a WebPage for everyone who wants to build an awesome Garden';
+    var landingPage = 'Home';
+    var activeLink = '/Home/Garden Inspiration';
+
+
+block primary-content
+  h1 = Example
+  p = description
+  h2 Example
+
+  p(title="this is a tooltip") This paragraph has a tooltip.
